@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faGamepad } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
+  faItchIo,
   faLinkedin,
   faMedium,
   faStackOverflow,
@@ -12,24 +13,24 @@ import { Box, HStack } from "@chakra-ui/react";
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    url: "mailto: mosesreid@hotmail.com",
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/ProvidedPlay",
   },
   {
     icon: faLinkedin,
     url: "https://www.linkedin.com",
   },
   {
-    icon: faMedium,
-    url: "https://medium.com",
+    icon: faGamepad,
+    url: "https://gamejolt.com/@ProvidedPlay",
   },
   {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
-  },
+    icon:faItchIo,
+    url: "https://providedplay.itch.io/"
+  }
 ];
 
 const Header = () => {
@@ -76,6 +77,8 @@ const Header = () => {
           <nav>
             <HStack spacing={8}>
               {/* Add links to Projects and Contact me section */}
+              <a href="#projects" onClick={handleClick("projects")}>Projects</a>
+              <a href="#contact-me" onClick={handleClick("contactme")}>Contact Me</a>
             </HStack>
           </nav>
         </HStack>
