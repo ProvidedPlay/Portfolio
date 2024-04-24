@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faGamepad } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -9,6 +9,8 @@ import {
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
+
+
 
 const socials = [
   {
@@ -45,13 +47,33 @@ const Header = () => {
     }
   };
 
+
+const [translateY, changeTranslateY] = useState("translateY(0)")
+const oldScrollY = useRef(window.scrollY);
+
+useEffect(() => {
+  const handleScroll = () => {
+
+    if (window.scrollY !== oldScrollY.current){
+      const newTranslateValue = window.scrollY > oldScrollY.current ? "translateY(-200px)" : "translateY(0)"
+      changeTranslateY(newTranslateValue) 
+      oldScrollY.current = window.scrollY
+    }
+  }
+  window.addEventListener('scroll', handleScroll)
+
+  return () => (
+    window.removeEventListener('scroll', handleScroll)
+  )
+},[])
+
   return (
     <Box
       position="fixed"
       top={0}
       left={0}
       right={0}
-      translateY={0}
+      transform={translateY}
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
