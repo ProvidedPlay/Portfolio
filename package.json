@@ -2,7 +2,7 @@
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://providedplay.github.io/Portfolio",
+  "homepage": "https://ProvidedPlay.github.io/myportfolio",
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.4",
