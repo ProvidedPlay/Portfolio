@@ -3,7 +3,7 @@ import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
 
-const projects = [
+const reactProjects = [
   {
     title: "React Space",
     description:
@@ -19,11 +19,11 @@ const projects = [
     getImageSrc: () => require("../images/photo2.jpg"),
   },
   {
-    title: "If Alive, Run",
+    title: "Photo Gallery",
     description:
-      "A short, challenging 2D platformer made for speedrunning. You can beat this game in three minutes, but you won't.",
-    url: "https://gamejolt.com/games/IfAliveRun/467451",
-    getImageSrc: () => require("../images/If Alive Run Avatar Gif.gif"),
+      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
+    url: "urlHere",
+    getImageSrc: () => require("../images/photo3.jpg"),
   },
   {
     title: "Event planner",
@@ -34,6 +34,45 @@ const projects = [
   },
 ];
 
+const gameProjects =[
+  {
+    title: "If Alive, Run",
+    description:
+      "A short, challenging 2D platformer made for speedrunning. You can beat this game in three minutes, but you won't",
+    url: "https://gamejolt.com/games/IfAliveRun/467451",
+    getImageSrc: () => require("../images/If Alive Run Avatar Gif.gif"),
+  }
+]
+
+const renderCard = (cardData) => {
+  return(
+  <Card
+  key={cardData.title}
+  title={cardData.title}
+  description={cardData.description}
+  url={cardData.url}
+  imageSrc={cardData.getImageSrc()}
+  />
+  )
+}
+
+const renderProjectSection = (sectionTitle, gridGap, projectGroup) => {
+  return(
+    <div>
+      <Heading as="h1" id="projects-section">
+        {sectionTitle}
+      </Heading>
+      <Box
+        display="grid"
+        gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        gridGap={gridGap}
+      >
+        {projectGroup.map((project) => (renderCard(project)))}
+      </Box>
+    </div>
+  )
+}
+
 const ProjectsSection = () => {
   return (
     <FullScreenSection
@@ -43,24 +82,8 @@ const ProjectsSection = () => {
       alignItems="flex-start"
       spacing={8}
     >
-      <Heading as="h1" id="projects-section">
-        Featured Projects
-      </Heading>
-      <Box
-        display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap={8}
-      >
-        {projects.map((project) => (
-          <Card
-            key={project.title}
-            title={project.title}
-            description={project.description}
-            url={project.url}
-            imageSrc={project.getImageSrc()}
-          />
-        ))}
-      </Box>
+      {renderProjectSection("React Projects", 8, reactProjects)}
+      {renderProjectSection("Game Projects", 8, gameProjects)}
     </FullScreenSection>
   );
 };
