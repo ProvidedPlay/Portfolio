@@ -19,11 +19,11 @@ const projects = [
     getImageSrc: () => require("../images/photo2.jpg"),
   },
   {
-    title: "Photo Gallery",
+    title: "If Alive, Run",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
-    url: "urlHere",
-    getImageSrc: () => require("../images/photo3.jpg"),
+      "A short, challenging 2D platformer made for speedrunning. You can beat this game in three minutes, but you won't.",
+    url: "https://gamejolt.com/games/IfAliveRun/467451",
+    getImageSrc: () => require("../images/If Alive Run Avatar Gif.gif"),
   },
   {
     title: "Event planner",
