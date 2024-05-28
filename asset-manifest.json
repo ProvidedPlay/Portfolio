@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.df6a7eab.css",
-    "main.js": "/Portfolio/static/js/main.936b653e.js",
+    "main.js": "/Portfolio/static/js/main.a64fe9a2.js",
     "static/js/453.83234151.chunk.js": "/Portfolio/static/js/453.83234151.chunk.js",
     "static/media/photo4.jpg": "/Portfolio/static/media/photo4.4c7907d15dd9ea0be97c.jpg",
     "static/media/If Alive Run Avatar Gif.gif": "/Portfolio/static/media/If Alive Run Avatar Gif.9ed614c18eeb19065f10.gif",
     "static/media/photo2.jpg": "/Portfolio/static/media/photo2.7d510936625768642967.jpg",
     "static/media/photo3.jpg": "/Portfolio/static/media/photo3.9a32dfac129b20149889.jpg",
-    "static/media/photo1.jpg": "/Portfolio/static/media/photo1.76b22eb753ddc88e0626.jpg",
     "static/media/My Profile Pic.png": "/Portfolio/static/media/My Profile Pic.bb7b1639b623f7f8c33e.png",
+    "static/media/Concentration Star Wars Media Art 2 cropped.jpg": "/Portfolio/static/media/Concentration Star Wars Media Art 2 cropped.028cd403cc0575e3c1d1.jpg",
     "index.html": "/Portfolio/index.html",
     "main.df6a7eab.css.map": "/Portfolio/static/css/main.df6a7eab.css.map",
-    "main.936b653e.js.map": "/Portfolio/static/js/main.936b653e.js.map",
+    "main.a64fe9a2.js.map": "/Portfolio/static/js/main.a64fe9a2.js.map",
     "453.83234151.chunk.js.map": "/Portfolio/static/js/453.83234151.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df6a7eab.css",
-    "static/js/main.936b653e.js"
+    "static/js/main.a64fe9a2.js"
   ]
 }
