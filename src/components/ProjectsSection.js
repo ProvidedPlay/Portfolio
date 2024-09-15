@@ -12,9 +12,9 @@ const reactProjects = [
     getImageSrc: () => require("../images/Concentration Star Wars Media Art 2 cropped.jpg"),
   },
   {
-    title: "Little Lemon Website",
+    title: "Little Lemon",
     description:
-      "The capstone project for my Meta Front End Developer Certification course series; a reactive home- and booking- page for the imaginary Italian restaurant 'Little Lemon', built in React.",
+      "The capstone project for my Meta Front End Developer Certification; a reactive home- and booking- page for the imaginary Italian restaurant 'Little Lemon'.",
     url: "https://providedplay.github.io/Little-Lemon-Capstone-Project/",
     getImageSrc: () => require("../images/LittleLemon.jpg")
   },
