@@ -18,7 +18,9 @@ const useSubmit = () => {
       const credentials = credentialFile !== 'null' && credentialFile !== 'undefined'? credentialFile.creds : exampleCreds
 
       await wait (150);
-      
+
+      console.log(credentials)
+
       emailjs.send(credentials.serviceID, credentials.templateID, data,{publicKey: credentials.publicKey} )
             .then((result) => {
                 attemptSucceeded=true

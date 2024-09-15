@@ -12,9 +12,9 @@ const reactProjects = [
     getImageSrc: () => require("../images/Concentration Star Wars Media Art 2 cropped.jpg"),
   },
   {
-    title: "React Infinite Scroll",
+    title: "Little Lemon Website",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️ (demo: no link)",
+      "The capstone project for my Meta Front End Developer Certification course series; a reactive home- and booking- page for the imaginary Italian restaurant 'Little Lemon', built in React.",
     url: "urlHere",
     getImageSrc: () => require("../images/photo2.jpg"),
   },
