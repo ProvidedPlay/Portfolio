@@ -15,8 +15,8 @@ const reactProjects = [
     title: "Little Lemon Website",
     description:
       "The capstone project for my Meta Front End Developer Certification course series; a reactive home- and booking- page for the imaginary Italian restaurant 'Little Lemon', built in React.",
-    url: "urlHere",
-    getImageSrc: () => require("../images/photo2.jpg"),
+    url: "https://providedplay.github.io/Little-Lemon-Capstone-Project/",
+    getImageSrc: () => require("../images/LittleLemon.jpg")
   },
   {
     title: "Photo Gallery",
