@@ -18,20 +18,6 @@ const reactProjects = [
     url: "https://providedplay.github.io/Little-Lemon-Capstone-Project/",
     getImageSrc: () => require("../images/LittleLemon.jpg")
   },
-  {
-    title: "Photo Gallery",
-    description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income (demo: no link)",
-    url: "urlHere",
-    getImageSrc: () => require("../images/photo3.jpg"),
-  },
-  {
-    title: "Event planner",
-    description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps (demo: no link)",
-    url: "urlHere",
-    getImageSrc: () => require("../images/photo4.jpg"),
-  },
 ];
 
 const gameProjects =[
