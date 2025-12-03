@@ -27,6 +27,13 @@ const gameProjects =[
       "A short, challenging 2D platformer made for speedrunning. You can beat this game in three minutes, but you won't",
     url: "https://gamejolt.com/games/IfAliveRun/467451",
     getImageSrc: () => require("../images/If Alive Run Avatar Gif.gif"),
+  },
+  {
+    title: "Conway's Game of Life by ProvidedPlay",
+    description:
+      "Ever wanted to run a 160-million cell simulation of Conway's Game of Life at 240 frames per second? No? Well, check this out anyways.",
+    url: "https://providedplay.itch.io/conways-game-of-life-by-provided-play",
+    getImageSrc: () => require("../images/GOL Gif 13.gif"),
   }
 ]
 
